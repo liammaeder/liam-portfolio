@@ -8,22 +8,22 @@
 
     <script>
       const findProject = () => {
-        const url = window.location.href;
+        // const url = window.location.href;
         const domain = 'https://liammaeder.github.io';
-        const folders = ["liam-portfolio"];
-        if (folders.length > 0) {
-          for (const folder of folders) {
-            const current = `${domain}/${folder}`;
-            if (url.startsWith(current)) {
-              location.href = `${current}/index.html?${url.replace(`${current}/`, '')}`;
-              return;
-            }
-          }
+        // const folders = ["liam-portfolio"];
+        // if (folders.length > 0) {
+        //   for (const folder of folders) {
+        //     const current = `${domain}/${folder}`;
+        //     if (url.startsWith(current)) {
+        //       location.href = `${current}/index.html?${url.replace(`${current}/`, '')}`;
+        //       return;
+        //     }
+        //   }
+        //
+        //   location.href = `${domain}/${folders[0]}`;
+        // }
 
-          location.href = `${domain}/${folders[0]}`;
-        }
-
-        location.href = `${domain}/index.html?${url.replace(`${current}/`, '')}`;
+        location.href = `${domain}/liam-project/index.html`;
       };
 
       findProject();
