@@ -52,8 +52,6 @@
     ]
   },
   "devDependencies": {
-    "gh": "^2.8.6",
-    "pages": "0.0.16",
     "gh-pages": "^5.0.0"
   }
 }
