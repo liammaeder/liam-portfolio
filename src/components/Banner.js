@@ -16,8 +16,6 @@ export const Banner = () => {
             tick();
         }, delta);
 
-        console.log(delta);
-
         return () => { clearInterval(ticker)}
     }, [text]);
 

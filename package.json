@@ -1,5 +1,5 @@
 {
-  "homepage": "https://liammaeder.github.io/liam-profile",
+  "homepage": "https://liammaeder.github.io/liam-portfolio",
   "name": "liam-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -52,6 +52,8 @@
     ]
   },
   "devDependencies": {
+    "gh": "^2.8.6",
+    "pages": "0.0.16",
     "gh-pages": "^5.0.0"
   }
 }
