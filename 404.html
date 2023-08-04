@@ -7,26 +7,16 @@
     <title>Redirect</title>
 
     <script>
-      const findProject = () => {
-        // const url = window.location.href;
-        const domain = 'https://liammaeder.github.io';
-        // const folders = ["liam-portfolio"];
-        // if (folders.length > 0) {
-        //   for (const folder of folders) {
-        //     const current = `${domain}/${folder}`;
-        //     if (url.startsWith(current)) {
-        //       location.href = `${current}/index.html?${url.replace(`${current}/`, '')}`;
-        //       return;
-        //     }
-        //   }
-        //
-        //   location.href = `${domain}/${folders[0]}`;
-        // }
+        const findProject = () => {
+            const url = window.location.href;
+            const domain = 'https://liammaeder.github.io/liam-portfolio';
 
-        location.href = `${domain}/liam-project/public/index.html`;
-      };
+            if (url !== `${domain}/public/index.html`) {
+              location.href = `${domain}/public/index.html`;
+            }
+        };
 
-      findProject();
+        findProject();
     </script>
 </head>
 <body>
