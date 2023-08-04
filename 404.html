@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect</title>
+
+    <script>
+      const findProject = () => {
+        const url = window.location.href;
+        const domain = 'https://liammaeder.github.io';
+        const folders = ["liam-portfolio"];
+        if (folders.length > 0) {
+          for (const folder of folders) {
+            const current = `${domain}/${folder}`;
+            if (url.startsWith(current)) {
+              location.href = `${current}/index.html?${url.replace(`${current}/`, '')}`;
+              return;
+            }
+          }
+
+          location.href = `${domain}/${folders[0]}`;
+        }
+
+        location.href = `${domain}/index.html?${url.replace(`${current}/`, '')}`;
+      };
+
+      findProject();
+    </script>
+</head>
+<body>
+  <div id="prod">
+    <div>liammaeder.github.io</div>
+    <hr>
+    <div>Enable JavaScript!</div>
+    <hr>
+    <a href="https://liammaeder.github.io/public/index.html"><button>Continue to the page</button></a>
+  </div>
+</body>
+</html>
